@@ -1,0 +1,22 @@
+html,body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    margin: 0;
+
+}
+
+.container {
+    margin-top: 40px;
+    padding: 0 250px 0 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

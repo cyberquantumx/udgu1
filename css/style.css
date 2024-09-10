@@ -1,0 +1,136 @@
+:root {
+    --bg: #0d1b2a;
+    --header: #1b263b;
+    --text: #8ba5c8;
+}
+
+
+body {
+    background-color: var(--bg);
+}
+
+
+@font-face {
+    font-family: 'font';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/MV-SKIFER.otf);
+}
+
+* {
+    font-family: "font";
+    color: var(--text);
+}
+
+.container__title, .title {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+        -ms-user-select: none; 
+            user-select: none;
+}
+
+
+.header {
+    width: 100%;
+    height: 64px;
+    background-color: var(--header);
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0 32px 0 32px;
+}
+
+.footer {
+    width: 100%;
+    height: 64px;
+    background-color: var(--header);
+    margin-top: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0 32px 0 32px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.coffee {
+    outline: none;
+    border: none;
+    padding: 15px 0;
+    width: 124px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: rgba(255,255,255,0.7);
+    сursor: pointer;
+    
+}
+.coffee > span {
+    font-size: 14px;
+    color: black;
+    font-family: 'Arial';
+    font-weight: 900;
+}
+.coffee {
+    background-color: rgba(255,255,255,0.7);
+    transition: .5s;
+}
+.coffee:hover {
+    opacity: 0.5;
+    transition: .5s;
+    сursor: pointer;
+}
+.coffee:active {
+    opacity: 0.25;
+    transition: .2s;
+    сursor: pointer;
+}
+
+.container__title {
+    font-size: 156px;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    letter-spacing: 8px;
+}
+
+
+.info, .img {
+    margin-top: 100px;
+}
+.info > p, .inf {
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+.inf {
+    opacity: 0.3;
+    font-size: 18px;
+}
+
+img {
+    border-radius: 25px;
+}
+
+.footer > a {
+    font-family: 'Arial';
+    font-weight: 900;
+    text-decoration: none;
+}
+.footer > * {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
