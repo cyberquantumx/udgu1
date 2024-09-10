@@ -7,6 +7,36 @@
 
 body {
     background-color: var(--bg);
+    min-width: fit-content;
+}
+
+html,body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+.container {
+    margin-top: 40px;
+    padding: 0 250px 0 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -37,9 +67,8 @@ body {
     background-color: var(--header);
 
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
-    padding: 0 32px 0 32px;
 }
 
 .footer {
@@ -65,7 +94,7 @@ body {
     outline: none;
     border: none;
     padding: 15px 0;
-    width: 124px;
+    width: 100px;
     border-radius: 25px;
     display: flex;
     flex-direction: row;
@@ -73,7 +102,7 @@ body {
     align-items: center;
     height: 40px;
     background-color: rgba(255,255,255,0.7);
-    сursor: pointer;
+    cursor: pointer;
     
 }
 .coffee > span {
@@ -89,12 +118,12 @@ body {
 .coffee:hover {
     opacity: 0.5;
     transition: .5s;
-    сursor: pointer;
+    cursor: pointer;
 }
 .coffee:active {
     opacity: 0.25;
     transition: .2s;
-    сursor: pointer;
+    cursor: pointer;
 }
 
 .container__title {
@@ -105,6 +134,9 @@ body {
     letter-spacing: 8px;
 }
 
+.info {
+    width: 75%;
+}
 
 .info, .img {
     margin-top: 100px;
@@ -122,6 +154,8 @@ body {
 
 img {
     border-radius: 25px;
+    align-items: center;
+
 }
 
 .footer > a {
@@ -134,3 +168,24 @@ img {
     margin-right: 30px;
 }
 
+@media screen and (max-width: 980px) {
+    body {
+        width: 100%;
+    }
+    .container {
+        padding: 0;
+    }
+    .container__title {
+        font-size: 36px;
+        text-align: center;
+        align-items: center;
+        margin: -4px;
+        letter-spacing: 8px;
+    }
+    .img {
+        width: 80%;
+    }
+    .info > p, .inf {
+        font-size: 18px;
+    }
+}
